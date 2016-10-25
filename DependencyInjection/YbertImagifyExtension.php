@@ -15,7 +15,7 @@ class YbertImagifyExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('ybert_imagify.apiKey', $config['directKitUrl']);
+        $container->setParameter('ybert_imagify.apiKey', $config['apiKey']);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('imagify.xml');
