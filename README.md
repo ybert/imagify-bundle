@@ -26,7 +26,7 @@ Configure the bundle in `app/config/config.yml`:
 
 ```yaml
 ybert_imagify:
-    apiKey: "%imagify_apiKey%"
+    apiKey: %imagify_apiKey%
 ```
 
 Finally, update your `app/config/parameters.yml` file to store your Imagify API credentials:
@@ -34,7 +34,7 @@ Finally, update your `app/config/parameters.yml` file to store your Imagify API 
 ```yaml
 parameters:
     # ...
-    imagify_apiKey: "MyAPIKey"
+    imagify_apiKey: MyAPIKey
 ```
 
 ## Usage
