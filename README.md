@@ -54,7 +54,7 @@ Example usage in a controller:
          *
          * @var \Imagify\Optimizer $imagify
          */
-        $imagify = $this->container->get('ybert_imagify.optimizer');
+        $imagify = $this->get('ybert_imagify.optimizer');
         $param = array(
             "level"=> 'ultra',
             "resize"=> array("width"=> 50),
