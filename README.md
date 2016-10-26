@@ -49,7 +49,11 @@ Example usage in a controller:
 
     public function optimizeImage()
     {
-        // get the Imagify service
+        /**
+         * Get the Imagify service
+         *
+         * @var \Imagify\Optimizer $imagify
+         */
         $imagify = $this->container->get('ybert_imagify.optimizer');
         $param = array(
             "level"=> 'ultra',
